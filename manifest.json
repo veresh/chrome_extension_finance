@@ -1,11 +1,17 @@
 {
-    "name": "Covid-19 Stats UK",
+    "name": "Stock Tracker",
     "version": "1.0.0",
-    "description": "latest covid data of UK",
+    "description": "Get Detail of the portfolio stocks",
     "manifest_version": 3,
-    "author": "Sampurna Chapagain",
-    "action":{
+    "author": "Veresh Jain",
+    "background": {
+        "service_worker": "script.js"
+    },
+    "action": {
         "default_popup": "index.html",
-        "default_title": "Latest Covid Report"
-    }
+        "default_title": "Details of the Portfolio Stocks"
+    },
+    "permissions": [
+        "tabs"
+    ]
 }
